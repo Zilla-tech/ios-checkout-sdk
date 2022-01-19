@@ -22,9 +22,8 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios
   spec.ios.deployment_target = "11.0"
   spec.swift_version = "5.0"
-  spec.source = { :git => "https://github.com/Zilla-tech/ios-checkout-sdk", :tag => "#{spec.version}" }
+  spec.source = { :git => "https://github.com/Zilla-tech/ios-checkout-sdk.git", :tag => "#{spec.version}" }
   spec.source_files  = "CheckoutiOS", "CheckoutiOS/**/*.{h,m,swift}"
-  spec.resources = "CheckoutiOS/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
   spec.exclude_files = "CheckoutiOS/Exclude"
   spec.public_header_files = "CheckoutiOS/**/*.h"
   spec.framework = "UIKit"

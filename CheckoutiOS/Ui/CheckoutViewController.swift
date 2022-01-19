@@ -47,11 +47,17 @@ class CheckoutViewController : UIViewController, WKUIDelegate {
     }()
     
     lazy var loadingView: UIActivityIndicatorView = {
-        let loading =  UIActivityIndicatorView(style: .medium)
-        loading.center = view.center
-        loading.translatesAutoresizingMaskIntoConstraints = false
-        loading.hidesWhenStopped = true
-        return loading
+        var loading: UIActivityIndicatorView?
+        if #available(iOS 13.0, *) {
+            loading =  UIActivityIndicatorView(style: .medium)
+        } else {
+            // Fallback on earlier versions
+            loading =  UIActivityIndicatorView(style: .gray)
+        }
+        loading?.center = view.center
+        loading?.translatesAutoresizingMaskIntoConstraints = false
+        loading?.hidesWhenStopped = true
+        return loading!
     }()
     
     override public func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
