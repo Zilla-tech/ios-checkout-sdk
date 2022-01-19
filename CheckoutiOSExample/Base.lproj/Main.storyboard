@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CheckoutiOSExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GMD-45-APA">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Title" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PeJ-Us-eIb">
+                                        <rect key="frame" x="24" y="392" width="366" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1000" borderStyle="roundedRect" placeholder="Amount" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PTO-tc-blB">
+                                        <rect key="frame" x="24" y="474" width="366" height="38.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" role="primary" translatesAutoresizingMaskIntoConstraints="NO" id="ZVo-HB-B7k">
+                                        <rect key="frame" x="150.5" y="612.5" width="113" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Pay with Zilla"/>
+                                        <connections>
+                                            <action selector="pay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4xt-ci-EH9"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transaction status: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VLz-3m-4b7">
+                                        <rect key="frame" x="24" y="247" width="366" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="PeJ-Us-eIb" firstAttribute="top" secondItem="VLz-3m-4b7" secondAttribute="bottom" constant="124" id="FkL-dL-AYi"/>
+                                    <constraint firstItem="PTO-tc-blB" firstAttribute="trailing" secondItem="PeJ-Us-eIb" secondAttribute="trailing" id="GPx-Xa-2Mj"/>
+                                    <constraint firstItem="ZVo-HB-B7k" firstAttribute="top" secondItem="PTO-tc-blB" secondAttribute="bottom" constant="100" id="H1V-gh-kOn"/>
+                                    <constraint firstItem="PTO-tc-blB" firstAttribute="top" secondItem="PeJ-Us-eIb" secondAttribute="bottom" constant="48" id="M5l-Tw-lhy"/>
+                                    <constraint firstItem="VLz-3m-4b7" firstAttribute="leading" secondItem="GMD-45-APA" secondAttribute="leading" constant="24" id="RK9-0Q-Dnc"/>
+                                    <constraint firstItem="PeJ-Us-eIb" firstAttribute="centerY" secondItem="GMD-45-APA" secondAttribute="centerY" id="RjM-k8-czP"/>
+                                    <constraint firstItem="PeJ-Us-eIb" firstAttribute="leading" secondItem="GMD-45-APA" secondAttribute="leading" constant="24" id="SIt-Sb-RZY"/>
+                                    <constraint firstItem="PeJ-Us-eIb" firstAttribute="centerX" secondItem="GMD-45-APA" secondAttribute="centerX" id="e4T-R9-uHu"/>
+                                    <constraint firstAttribute="trailing" secondItem="VLz-3m-4b7" secondAttribute="trailing" constant="24" id="iAB-lL-8en"/>
+                                    <constraint firstAttribute="trailing" secondItem="PeJ-Us-eIb" secondAttribute="trailing" constant="24" id="kfK-AE-ZMW"/>
+                                    <constraint firstItem="PTO-tc-blB" firstAttribute="leading" secondItem="PeJ-Us-eIb" secondAttribute="leading" id="oRg-7u-2qx"/>
+                                    <constraint firstItem="ZVo-HB-B7k" firstAttribute="centerX" secondItem="GMD-45-APA" secondAttribute="centerX" id="zpQ-0c-GAH"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GMD-45-APA" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="DNz-k5-DLk"/>
+                            <constraint firstItem="GMD-45-APA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Uhy-qu-VXv"/>
+                            <constraint firstItem="GMD-45-APA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Yrb-dF-3QB"/>
+                            <constraint firstItem="GMD-45-APA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oWn-OA-6zg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="amountTextfield" destination="PTO-tc-blB" id="z6n-b1-YFe"/>
+                        <outlet property="payWithZillaButton" destination="ZVo-HB-B7k" id="Ver-Mn-RSJ"/>
+                        <outlet property="statusLabel" destination="VLz-3m-4b7" id="efk-TT-Sv6"/>
+                        <outlet property="titleTextfield" destination="PeJ-Us-eIb" id="UHf-Ag-Gry"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-38" y="114"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

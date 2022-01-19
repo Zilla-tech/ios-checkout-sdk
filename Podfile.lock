@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (5.5.0)
+  - CheckoutiOS (0.0.1):
+    - Alamofire
+
+DEPENDENCIES:
+  - Alamofire (~> 5.5)
+  - CheckoutiOS (from `.`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+
+EXTERNAL SOURCES:
+  CheckoutiOS:
+    :path: "."
+
+SPEC CHECKSUMS:
+  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  CheckoutiOS: da16232c271df715fc34f95335a2aefeb582ee2d
+
+PODFILE CHECKSUM: 69d4faa5fa3272e4012ddb01e5dbfc9caed43fd3
+
+COCOAPODS: 1.11.2
