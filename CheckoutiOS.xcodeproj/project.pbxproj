@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D4079ED327959E1000DDADE0 /* libPods-CheckoutiOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4079ED227959E1000DDADE0 /* libPods-CheckoutiOS.a */; };
 		D4079ED527959E1C00DDADE0 /* libPods-CheckoutiOSExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4079ED427959E1C00DDADE0 /* libPods-CheckoutiOSExample.a */; };
+		D427DAF12797B1D7007C8C08 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = D427DAF02797B1D7007C8C08 /* Credentials.swift */; };
 		D46CC5552795115000647994 /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46CC5542795115000647994 /* CheckoutViewController.swift */; };
 		D46CC5572795127000647994 /* CheckoutViewController+WKWebkit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46CC5562795127000647994 /* CheckoutViewController+WKWebkit.swift */; };
 		D46CC55B279515C300647994 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46CC55A279515C300647994 /* Constants.swift */; };
@@ -58,6 +59,7 @@
 		D4079ECC2795989C00DDADE0 /* libAlamofire.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAlamofire.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4079ED227959E1000DDADE0 /* libPods-CheckoutiOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-CheckoutiOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4079ED427959E1C00DDADE0 /* libPods-CheckoutiOSExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-CheckoutiOSExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D427DAF02797B1D7007C8C08 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		D46CC5542795115000647994 /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
 		D46CC5562795127000647994 /* CheckoutViewController+WKWebkit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CheckoutViewController+WKWebkit.swift"; sourceTree = "<group>"; };
 		D46CC55A279515C300647994 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -258,6 +260,7 @@
 				D4D0022C27952D1E005316BB /* Assets.xcassets */,
 				D4D0022E27952D1E005316BB /* LaunchScreen.storyboard */,
 				D4D0023127952D1E005316BB /* Info.plist */,
+				D427DAF02797B1D7007C8C08 /* Credentials.swift */,
 			);
 			path = CheckoutiOSExample;
 			sourceTree = "<group>";
@@ -506,6 +509,7 @@
 			files = (
 				D4D0022827952D1C005316BB /* ViewController.swift in Sources */,
 				D4D0022427952D1C005316BB /* AppDelegate.swift in Sources */,
+				D427DAF12797B1D7007C8C08 /* Credentials.swift in Sources */,
 				D4D0022627952D1C005316BB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

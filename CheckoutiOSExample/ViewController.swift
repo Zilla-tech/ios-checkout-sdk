@@ -35,7 +35,8 @@ class ViewController: UIViewController {
             .build()
         
         Zilla.shared.createNewOrder(withViewController: self,
-                                    withPublicKey: "public_key", withTransactionParams: params,
+                                    withPublicKey: Credentials.PublicKey,
+                                    withTransactionParams: params,
                                     onSuccess: { result in
             self.statusLabel.text = "Transaction status: \(result.status)"
             print(" onSuccess: \(result)")
@@ -48,8 +49,8 @@ class ViewController: UIViewController {
     private func completeExistingOrder() {
         
         Zilla.shared.completeExistingOrder(withViewController: self,
-                                           withPublicKey: "public_key",
-                                           withOrderId: "order_code",
+                                           withPublicKey: Credentials.PublicKey,
+                                           withOrderId: "<order_code>",
                                            onSuccess: { result in
             self.statusLabel.text = "Transaction status: \(result.status)"
             print(" onSuccess: \(result)")
